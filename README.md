@@ -10,10 +10,10 @@ To enhance NeuFlow's real-world performance, we are currently collecting new opt
 <table align="center">
   <tr>
     <td> 
-      <img src="dataset_preview/dataset_1.png" height="500" >
+      <img src="dataset_preview/dataset_1.png" width="500" >
     </td>
     <td> 
-      <img src="dataset_preview/dataset_2.png" height="500" >
+      <img src="dataset_preview/dataset_2.png" width="500" >
     </td>
   </tr>
 </table>
