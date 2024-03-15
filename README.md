@@ -6,8 +6,17 @@ Official PyTorch implementation of paper: [NeuFlow: Real-time, High-accuracy Opt
 
 To enhance NeuFlow's real-world performance, we are currently collecting new optical flow data featuring photorealistic images and precise optical flow ground truth. Stay tuned for the release of the dataset and trained model!
 
-<img src="dataset_preview/dataset_1.png">
-<img src="dataset_preview/dataset_2.png">
+
+<table align="center">
+  <tr>
+    <td> 
+      <img src="dataset_preview/dataset_1.png" height="500" >
+    </td>
+    <td> 
+      <img src="dataset_preview/dataset_2.png" height="500" >
+    </td>
+  </tr>
+</table>
 
 ## Installation
 
