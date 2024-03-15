@@ -1,6 +1,6 @@
 # NeuFlow
 
-Official PyTorch implementation of paper: [NeuFlow: Real-time, High-accuracy Optical Flow Estimation on Robots Using Edge Devices](https://arxiv.org/)
+Official PyTorch implementation of paper: [NeuFlow: Real-time, High-accuracy Optical Flow Estimation on Robots Using Edge Devices](NeuFlow.pdf)
 
 ## Coming Soon!
 
@@ -10,10 +10,10 @@ To enhance NeuFlow's real-world performance, we are currently collecting new opt
 <table align="center">
   <tr>
     <td> 
-      <img src="dataset_preview/dataset_1.png" width="500" >
+      <img src="dataset_preview/dataset_1.png" width="550" >
     </td>
     <td> 
-      <img src="dataset_preview/dataset_2.png" width="500" >
+      <img src="dataset_preview/dataset_2.png" width="550" >
     </td>
   </tr>
 </table>
