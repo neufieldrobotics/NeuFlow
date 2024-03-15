@@ -21,7 +21,7 @@ The datasets used to train and evaluate NeuFlow are as follows:
 * [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow)
 * [HD1K](http://hci-benchmark.iwr.uni-heidelberg.de/) 
 
-By default the dataloader [datasets.py](data/datasets.py) assumes the datasets are located in folder `datasets` and are organized as follows:
+By default the dataloader assumes the datasets are located in folder `datasets` and are organized as follows:
 
 ```
 datasets
