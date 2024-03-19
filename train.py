@@ -195,7 +195,7 @@ def main(args):
 
                     counter += 1
 
-                    if counter >= 5:
+                    if counter >= 20:
 
                         for group in optimizer.param_groups:
                             group['lr'] *= 0.7
