@@ -31,7 +31,7 @@ conda install pytorch==2.0.1 torchvision==0.15.2 pytorch-cuda=11.7 -c pytorch -c
 pip install opencv-python
 ```
 
-[Pytorch-Correlation-extension](https://github.com/ClementPinard/Pytorch-Correlation-extension) (Recommend to build from source)
+[Pytorch-Correlation-extension 0.4.0](https://github.com/ClementPinard/Pytorch-Correlation-extension/tree/0.4.0) (Recommend to build from source)
 
 ## Datasets
 
