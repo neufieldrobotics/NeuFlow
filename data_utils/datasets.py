@@ -359,8 +359,13 @@ def build_train_dataset(stage):
         train_dataset = KITTI(aug_params, split='training', val=False)
 
     elif stage == 'neusim':
-        aug_params = {'crop_size': (720, 1280), 'min_scale': -0.2, 'max_scale': 0.4, 'do_flip': False}
+        aug_params = {'crop_size': (384, 768), 'min_scale': -0.2, 'max_scale': 0.6, 'do_flip': False}
 
-        train_dataset = NeuSim(aug_params)
+        things_clean = FlyingThings3D(aug_params, dstype='frames_cleanpass', load_occlusion=True)
+        sintel_final = FlyingThings3D(aug_params, dstype='frames_finalpass', load_occlusion=True)
+
+        neu_dataset = NeuSim(aug_params)
+
+        train_dataset = clean_dataset + final_dataset + 10 * neu_dataset
 
     return train_dataset
