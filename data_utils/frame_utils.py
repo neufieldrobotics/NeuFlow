@@ -133,4 +133,6 @@ def read_gen(file_name, pil=False):
             return flow
         else:
             return flow[:, :, :-1]
+    elif ext == '.npy':
+        flow = np.load(file_name)
     return []
