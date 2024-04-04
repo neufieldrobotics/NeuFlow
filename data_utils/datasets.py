@@ -298,6 +298,28 @@ class HD1K(FlowDataset):
             seq_ix += 1
 
 
+class NeuSim(FlowDataset):
+    def __init__(self, aug_params=None,
+                 root='datasets/NeuSim'
+                 ):
+        super(NeuSim, self).__init__(aug_params)
+
+        image_dirs = sorted(glob(osp.join(root, '*/image')))
+
+        fw_flow_dirs = sorted(glob(osp.join(root, '*/forward_flow')))
+        bw_flow_dirs = sorted(glob(osp.join(root, '*/backward_flow')))
+
+        for image_dir, fw_flow_dir, bw_flow_dir in zip(image_dirs, fw_flow_dirs, bw_flow_dirs):
+            images = sorted(glob(osp.join(image_dir, '*.png')))
+            fw_flows = sorted(glob(osp.join(fw_flow_dir, '*.npy')))
+            bw_flows = sorted(glob(osp.join(bw_flow_dir, '*.npy')))
+            for i in range(len(fw_flows) - 1):
+                self.image_list += [[images[i], images[i + 1]]]
+                self.flow_list += [fw_flows[i]]
+                self.image_list += [[images[i + 1], images[i]]]
+                self.flow_list += [bw_flows[i]]
+
+
 def build_train_dataset(stage):
     if stage == 'chairs':
         aug_params = {'crop_size': (384, 512), 'min_scale': -0.1, 'max_scale': 1.0, 'do_flip': True}
@@ -335,5 +357,10 @@ def build_train_dataset(stage):
         aug_params = {'crop_size': (320, 1152), 'min_scale': -0.2, 'max_scale': 0.4, 'do_flip': False}
 
         train_dataset = KITTI(aug_params, split='training', val=False)
+
+    elif stage == 'neusim':
+        aug_params = {'crop_size': (720, 1280), 'min_scale': -0.2, 'max_scale': 0.4, 'do_flip': False}
+
+        train_dataset = NeuSim(aug_params)
 
     return train_dataset
