@@ -4,7 +4,7 @@ Official PyTorch implementation of paper:
 
 [NeuFlow: Real-time, High-accuracy Optical Flow Estimation on Robots Using Edge Devices](NeuFlow.pdf)
 
-Authors: Zhiyong Zhang, Huaizu Jiang, Hanumant Singh
+Authors: [Zhiyong Zhang](https://www.linkedin.com/in/zhiyong-zhang-0772a0159/), [Huaizu Jiang](https://jianghz.me/), [Hanumant Singh](https://scholar.google.com/citations?user=1UEU5PEAAAAJ)
 
 ## Coming Soon!
 
