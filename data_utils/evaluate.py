@@ -152,7 +152,7 @@ def validate_kitti(model,
     """ Peform validation using the KITTI-2015 (train) split """
     model.eval()
 
-    val_dataset = datasets.KITTI(split='training', val=True)
+    val_dataset = datasets.KITTI(split='training')
     print('Number of validation image pairs: %d' % len(val_dataset))
 
     out_list, epe_list = [], []
