@@ -22,16 +22,22 @@ To enhance NeuFlow's real-world performance, we are currently collecting new opt
   </tr>
 </table>
 
-## Installation
+## Installation (PyTorch >= 2.0 is required)
 
 ```
 conda create --name neuflow python==3.8
 conda activate neuflow
 conda install pytorch==2.0.1 torchvision==0.15.2 pytorch-cuda=11.7 -c pytorch -c nvidia
-pip install opencv-python
+pip install numpy opencv-python
 ```
 
 [Pytorch-Correlation-extension 0.4.0](https://github.com/ClementPinard/Pytorch-Correlation-extension/tree/0.4.0) (Recommend to build from source)
+
+```
+git clone -b 0.4.0 https://github.com/ClementPinard/Pytorch-Correlation-extension.git
+cd Pytorch-Correlation-extension/
+python setup.py install
+```
 
 ## Datasets
 
