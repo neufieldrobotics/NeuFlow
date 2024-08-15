@@ -6,21 +6,9 @@ Official PyTorch implementation of paper:
 
 Authors: [Zhiyong Zhang](https://www.linkedin.com/in/zhiyong-zhang-0772a0159/), [Huaizu Jiang](https://jianghz.me/), [Hanumant Singh](https://scholar.google.com/citations?user=1UEU5PEAAAAJ)
 
-## Coming Soon!
+## [NeuFlow v2](https://github.com/neufieldrobotics/NeuFlow_v2) has been published, significantly improving real-world accuracy.
 
-To enhance NeuFlow's real-world performance, we are currently collecting new optical flow data featuring photorealistic images and precise optical flow ground truth. Stay tuned for the release of the dataset and trained model!
-
-
-<table align="center">
-  <tr>
-    <td> 
-      <img src="dataset_preview/dataset_1.png" width="600" >
-    </td>
-    <td> 
-      <img src="dataset_preview/dataset_2.png" width="600" >
-    </td>
-  </tr>
-</table>
+<img src="NeuFlow_v2/neuflow_v2_plot.png" width="600" >
 
 ## Installation (PyTorch >= 2.0 is required)
 
