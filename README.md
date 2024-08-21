@@ -1,4 +1,4 @@
-# NeuFlow
+# NeuFlow v1
 
 Official PyTorch implementation of paper:
 
