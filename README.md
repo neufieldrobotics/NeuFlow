@@ -1,4 +1,4 @@
-# NeuFlow v1
+# NeuFlow v1 (Deprecated) Please move to [NeuFlow v2](https://github.com/neufieldrobotics/NeuFlow_v2)
 
 Official PyTorch implementation of paper:
 
